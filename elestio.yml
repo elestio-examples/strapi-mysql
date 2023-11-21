@@ -43,7 +43,7 @@ environments:
   - key: "DATABASE_CLIENT"
     value: "postgres"
   - key: "DATABASE_PORT"
-    value: "5432"
+    value: "3306"
   - key: "DATABASE_NAME"
     value: "strapi"
   - key: "DATABASE_USERNAME"
