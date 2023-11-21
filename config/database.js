@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
   connection: {
-    client: "postgres",
+    client: "mysql",
     connection: {
       host: env("DATABASE_HOST"),
       port: env.int("DATABASE_PORT"),
@@ -12,6 +12,6 @@ module.exports = ({ env }) => ({
       //   rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
       // },
     },
-    debug: false,
+    useNullAsDefault: true,
   },
 });
