@@ -19,7 +19,7 @@ You can open Strapi UI here:
 You can open PHPMyAdmin here:
 
     URL: https://[CI_CD_DOMAIN]:57024
-    email: [ADMIN_EMAIL]
+    login: root
     password: [ADMIN_PASSWORD]
 
 # Plugins
