@@ -5,5 +5,6 @@ cp ./Dockerfile ./app/Dockerfile
 cp ./.env ./app/.env
 cp ./entrypoint.sh ./app/entrypoint.sh
 chmod +x ./app/entrypoint.sh
+chmod +x ./entrypoint.sh
 
 cd ./app && touch yarn.lock && yarn install && docker buildx build . --output type=docker,name=elestio4test/strapi-mysql-production:latest | docker load && cd ..
